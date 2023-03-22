@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 num2 = edit2.getText().toString();
                 if(edit1.getText().toString().equals("")||edit2.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_LONG).show();
+                    textResult.setText("계산 결과 : ");
                 }
                 else {
                     result = Float.parseFloat(num1) + Float.parseFloat(num2);
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 num2 = edit2.getText().toString();
                 if(edit1.getText().toString().equals("")||edit2.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_LONG).show();
+                    textResult.setText("계산 결과 : ");
                 }
                 else {
                     result = Float.parseFloat(num1) - Float.parseFloat(num2);
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 num2 = edit2.getText().toString();
                 if(edit1.getText().toString().equals("")||edit2.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_LONG).show();
+                    textResult.setText("계산 결과 : ");
                 }
                 else {
                     result = Float.parseFloat(num1) * Float.parseFloat(num2);
@@ -85,10 +88,12 @@ public class MainActivity extends AppCompatActivity {
                 num2 = edit2.getText().toString();
                 if(edit1.getText().toString().equals("")||edit2.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_LONG).show();
+                    textResult.setText("계산 결과 : ");
                 }
                 else {
                     if (num2.equals("0")) {
                         Toast.makeText(getApplicationContext(), "0으로 나눌 수 없습니다!", Toast.LENGTH_LONG).show();
+                        textResult.setText("계산 결과 : ");
                     }
                     else {
                         result = Float.parseFloat(num1) / Float.parseFloat(num2);
@@ -105,10 +110,12 @@ public class MainActivity extends AppCompatActivity {
                 num2 = edit2.getText().toString();
                 if(edit1.getText().toString().equals("")||edit2.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_LONG).show();
+                    textResult.setText("계산 결과 : ");
                 }
                 else {
                     if (num2.equals("0")) {
                         Toast.makeText(getApplicationContext(), "0으로 나눌 수 없습니다!", Toast.LENGTH_LONG).show();
+                        textResult.setText("계산 결과 : ");
                     }
                     else {
                         result = Float.parseFloat(num1) % Float.parseFloat(num2);
